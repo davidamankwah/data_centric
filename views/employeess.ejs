@@ -1,0 +1,31 @@
+<h1> Employee </h1>
+
+  <!-- Shows details of all Employees -->
+<table>
+    <tr>
+        <th>EID </th>
+        <th>Name</th>
+        <th>Role</th>
+        <th>Salary</th>
+    </tr>
+
+  
+    <% employe.forEach((e)=>
+        { %>
+        <tr>
+            <td>
+                <%= e.eid %>
+            </td>
+            <td>
+                <%= e.ename %>
+            </td>
+            <td>
+                <%= e.role %>
+            </td>
+            <td>
+                <%= e.salary %>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+<a href="http://localhost:3004/">Home</a>  <!-- link to the Home page -->

@@ -1,0 +1,33 @@
+<h1> Departments </h1>
+
+<table>
+    <tr>
+        <th>DID </th>
+        <th>Name</th>
+        <th>Budget</th>
+        <th>Location</th>
+        <th>Delete</th>
+    </tr>
+
+    <% depts.forEach((d)=>
+        { %>
+        <tr>
+            <td>
+                <%= d.did %>
+            </td>
+            <td>
+                <%= d.dname %>
+            </td>
+            <td>
+                <%= d.lid %>
+            </td>
+            <td>
+                <%= d.budget %>
+            </td>
+            <td>
+                <a href="http://localhost:3004/department/deletes">Delete</a><!-- delete for each Employee -->
+            </td>
+        </tr>
+        <% }) %>
+</table>
+<a href="http://localhost:3004/">Home</a><!-- link to the Home page -->

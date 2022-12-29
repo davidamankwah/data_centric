@@ -1,0 +1,27 @@
+<h1> Employee (MongoDB) </h1>
+
+<table>
+    <tr>
+        <th>EID </th>
+        <th>Phone</th>
+        <th>Email</th>
+    </tr>
+
+
+    <a href="http://localhost:3004/addEmployeeDB">Add Employee (MongoDB)</a> <!-- link to the add employeedb page -->
+    <% emply.forEach((emp)=>
+        { %>
+        <tr>
+            <td>
+                <%= emp._id %>
+            </td>
+            <td>
+                <%= emp.phone %>
+            </td>
+            <td>
+                <%= emp.email %>
+            </td>
+        </tr>
+        <% }) %>
+</table>
+<a href="http://localhost:3004/">Home</a> <!-- link to the Home page -->
